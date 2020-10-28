@@ -1,0 +1,66 @@
+5
+-256
+1 4 6 4 1
+4 16 24 16 4
+6 24 -476 24 6
+4 16 24 16 4
+1 4 6 4 1
+
+# does absolutely nothing
+3
+1
+0 0 0
+0 1 0
+0 0 0
+#edge detection 1 / cursed deepfry
+3
+1
+1 0 -1
+0 0 0
+-1 0 1
+#edge detection 2 / heavy deepfry
+3
+1
+0 1 0
+1 -4 1
+0 1 0
+#edge detection 3 / premium deepfry
+3
+1
+-1 -1 -1
+-1 8 -1
+-1 -1 -1
+#sharpen / light fry
+3
+1
+0 -1 0
+-1 5 -1
+0 -1 0
+#box blur / pure greyscale
+3
+9
+1 1 1
+1 1 1
+1 1 1
+#gaussian blur 1 / colour mute
+3
+16
+1 2 1
+2 4 2
+1 2 1
+#gaussian blur 2 / poor greyscale
+5
+256
+1 4 6 4 1
+4 16 24 16 4
+6 24 36 24 6
+4 16 24 16 4
+1 4 6 4 1
+#unsharp masking / ???
+5
+-256
+1 4 6 4 1
+4 16 24 16 4
+6 24 -476 24 6
+4 16 24 16 4
+1 4 6 4 1
