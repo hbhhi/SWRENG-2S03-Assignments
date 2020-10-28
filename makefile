@@ -5,7 +5,7 @@ NUM = 20
 INPUT = jerry
 filter:
 	$(CC) -g -o filter Image\ Filter/filter.c
-	filter Image\ Filter/Images/$(INPUT).ppm kernel output.ppm
+	filter Image\ Filter/Images/$(INPUT).ppm Image\ Filter/kernel output.ppm
 	convert -compress none output.ppm output.png
 	rm filter output.ppm
 grey:
