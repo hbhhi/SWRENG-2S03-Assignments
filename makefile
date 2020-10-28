@@ -5,17 +5,17 @@ NUM = 20
 INPUT = jerry
 filter:
 	$(CC) -g -o filter Image\ Filter/filter.c
-	filter Image\ Filter/Image/$(INPUT).ppm kernel output.ppm
+	filter Image\ Filter/Images/$(INPUT).ppm kernel output.ppm
 	convert -compress none output.ppm output.png
 	rm filter output.ppm
 grey:
 	$(CC) -g -o grey Image\ Filter/greyscale.c
-	grey Image\ Filter/Image/$(INPUT).ppm output.ppm
+	grey Image\ Filter/Images/$(INPUT).ppm output.ppm
 	convert -compress none output.ppm output.png
 	rm grey output.ppm
 fry:
 	$(CC) -g -o fry Image\ Filter/deepfry.c
-	fry Image\ Filter/Image/$(INPUT).ppm output.ppm
+	fry Image\ Filter/Images/$(INPUT).ppm output.ppm
 	convert -compress none output.ppm output.png
 	rm fry output.ppm
 fib:
